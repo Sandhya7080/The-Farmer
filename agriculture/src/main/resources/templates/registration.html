@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Registration Form</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+          height: 100vh;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          background: linear-gradient(grey, wheat, grey);
+          animation: fadeInBody 1.5s ease-in-out;
+        }
+
+        @keyframes fadeInBody {
+          from {
+            opacity: 0;
+          }
+          to {
+            opacity: 1;
+          }
+        }
+
+        .navbar {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 15px 30px;
+          background-color: #1c1c1c;
+          width: 100%;
+          animation: slideInNav 1.2s ease-out;
+        }
+
+        @keyframes slideInNav {
+          from {
+            transform: translateY(-100%);
+            opacity: 0;
+          }
+          to {
+            transform: translateY(0);
+            opacity: 1;
+          }
+        }
+
+        .navbar-brand {
+          color: white;
+          font-size: 24px;
+          font-weight: bold;
+        }
+
+        .navbar-links {
+          display: flex;
+          list-style: none;
+        }
+
+        .navbar-links li {
+          margin: 0 15px;
+        }
+
+        .navbar-links a {
+          color: #f4f4f4;
+          text-decoration: none;
+          font-size: 16px;
+          transition: color 0.3s ease;
+        }
+
+        .navbar-links a:hover {
+          color: #ffb300;
+        }
+
+        .navbar-button button {
+          background-color: #ffb300;
+          color: white;
+          border: none;
+          padding: 10px 20px;
+          font-size: 16px;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+        }
+
+        .navbar-button button:hover {
+          background-color: #ff9800;
+        }
+
+        .container {
+          max-width: 700px;
+          width: 100%;
+          background-color: #fff;
+          padding: 25px 30px;
+          border-radius: 5px;
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+          margin-top: 20px;
+          animation: fadeInContainer 2s ease-in-out;
+        }
+
+        @keyframes fadeInContainer {
+          from {
+            opacity: 0;
+            transform: scale(0.95);
+          }
+          to {
+            opacity: 1;
+            transform: scale(1);
+          }
+        }
+
+        .title {
+          font-size: 25px;
+          font-weight: 500;
+          position: relative;
+        }
+
+        .title::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          height: 3px;
+          width: 30px;
+          border-radius: 5px;
+          background: linear-gradient(135deg, #71b7e6, #9b59b6);
+        }
+
+        .content form {
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+        }
+
+        .form-group {
+          width: calc(50% - 10px);
+          margin-bottom: 20px;
+        }
+
+        .form-group h3 {
+          font-size: 18px;
+          margin-bottom: 10px;
+        }
+
+        .input-box span.details {
+          display: block;
+          font-weight: 500;
+          margin-bottom: 5px;
+        }
+
+        .input-box input,
+        .input-box select {
+          height: 40px;
+          width: 100%;
+          outline: none;
+          font-size: 14px;
+          border-radius: 5px;
+          padding-left: 15px;
+          border: 1px solid #ccc;
+          border-bottom-width: 2px;
+          transition: all 0.3s ease;
+        }
+
+        .input-box input:focus,
+        .input-box select:focus {
+          border-color: #9b59b6;
+          background-color: #f1f1f1;
+          transform: scale(1.02);
+        }
+
+        .button {
+          width: 100%;
+          margin-top: 35px;
+        }
+
+        .button input {
+          width: 100%;
+          height: 45px;
+          border-radius: 5px;
+          border: none;
+          color: black;
+          font-size: 18px;
+          font-weight: 500;
+          cursor: pointer;
+          transition: background 0.3s ease, transform 0.2s ease;
+          background: linear-gradient(grey, wheat, grey);
+        }
+
+        .button input:hover {
+          background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+          transform: translateY(-3px);
+        }
+
+        @media(max-width: 768px) {
+          .form-group {
+            width: 100%;
+          }
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="navbar-brand">The Farming</div>
+    <ul class="navbar-links">
+        <li><a href="/home">Home</a></li>
+        <li><a href="/services">Services</a></li>
+        <li><a href="/bolg">Blog</a></li>
+        <li><a href="/aboutUs">About</a></li>
+        <li><a href="/contactUs">Contact</a></li>
+    </ul>
+    <div class="navbar-button">
+        <button>Get Started</button>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="title">Registration</div>
+    <div class="content">
+        <form action="#">
+            <div class="form-group user-details">
+                <h3>Personal Details</h3>
+                <div class="input-box">
+                    <span class="details">Full Name</span>
+                    <input type="text" placeholder="Enter your name" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Email</span>
+                    <input type="email" placeholder="Enter your email" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Phone Number</span>
+                    <input type="tel" placeholder="Enter your phone number" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Gat Number</span>
+                    <input type="text" placeholder="Enter your Gat number" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">7/12 Number</span>
+                    <input type="text" placeholder="Enter your Satbara number" required>
+                </div>
+            </div>
+
+            <div class="form-group address-details">
+                <h3>Address Details</h3>
+                <div class="input-box">
+                    <span class="details">Address</span>
+                    <input type="text" placeholder="Enter your village" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">District</span>
+                    <select required>
+                        <option value="" disabled selected>Select your district</option>
+                        <option value="Ahmednagar">Ahmednagar</option>
+                        <option value="Akola">Akola</option>
+                        <option value="Amravati">Amravati</option>
+                        <option value="Aurangabad">Aurangabad</option>
+                        <option value="Beed">Beed</option>
+                        <option value="Bhandara">Bhandara</option>
+                        <option value="Buldhana">Buldhana</option>
+                        <option value="Chandrapur">Chandrapur</option>
+                        <option value="Dhule">Dhule</option>
+                        <option value="Gadchiroli">Gadchiroli</option>
+                        <option value="Gondia">Gondia</option>
+                        <option value="Hingoli">Hingoli</option>
+                        <option value="Jalgaon">Jalgaon</option>
+                        <option value="Jalna">Jalna<git <option value="Kolhapur">Kolhapur</option>
+                        <option value="Latur">Latur</option>
+                        <option value="Mumbai City">Mumbai City</option>
+                        <option value="Mumbai Suburban">Mumbai Suburban</option>
+                        <option value="Nagpur">Nagpur</option>
+                        <option value="Nanded">Nanded</option>
+                        <option value="Nandurbar">Nandurbar</option>
+                        <option value="Nashik">Nashik</option>
+                        <option value="Osmanabad">Osmanabad</option>
+                        <option value="Palghar">Palghar</option>
+                        <option value="Parbhani">Parbhani</option>
+                        <option value="Pune">Pune</option>
+                        <option value="Raigad">Raigad</option>
+                        <option value="Ratnagiri">Ratnagiri</option>
+                        <option value="Sangli">Sangli</option>
+                        <option value="Satara">Satara</option>
+                        <option value="Sindhudurg">Sindhudurg</option>
+                        <option value="Solapur">Solapur</option>
+                        <option value="Thane">Thane</option>
+                        <option value="Wardha">Wardha</option>
+                        <option value="Washim">Washim</option>
+                        <option value="Yavatmal">Yavatmal</option>
+                        <option value="Sambhajinagar">Sambhajinagar (Aurangabad)</option>
+                    </select>
+
+                </div>
+                <div class="input-box">
+                    <span class="details">State</span>
+                    <select required>
+                        <option value="" disabled selected>Select your state</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Karnataka">Karnataka</option>
+                    </select>
+                </div>
+
+                <div class="input-box">
+                    <span class="details">Pincode</span>
+                    <input type="text" placeholder="Enter your pincode" required>
+                </div>
+            </div>
+
+            <div class="button">
+                <input type="submit" value="Register">
+            </div>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

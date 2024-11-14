@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f9fd;
+            color: #333;
+        }
+
+        /* Navbar styling */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: #1c1c1c;
+            width: 100%;
+        }
+
+        .navbar-brand {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .navbar-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .navbar-links li {
+            margin: 0 15px;
+        }
+
+        .navbar-links a {
+            color: #f4f4f4;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        .navbar-links a:hover {
+            color: #ffb300;
+        }
+
+        .navbar-button button {
+            background-color: #ffb300;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar-button button:hover {
+            background-color: #ff9800;
+        }
+
+        /* Hero Section with animated header */
+        .hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 60px;
+      background: linear-gradient(black, white, grey);
+             color: blue;
+            position: relative;
+        }
+
+        /* New Animated "About Us" Heading */
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+            background: linear-gradient(90deg, #ff9800, #ffb300);
+            -webkit-background-clip: text;
+            color: transparent;
+            animation: fadeInMove 2s ease-out forwards;
+        }
+
+        @keyframes fadeInMove {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            50% {
+                opacity: 0.5;
+                transform: translateY(10px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-top: 10px;
+            color: #666;
+            max-width: 800px;
+            animation: fadeInSlide 3s ease forwards;
+        }
+
+        @keyframes fadeInSlide {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* About Content */
+        .about-content {
+            padding: 40px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+            background-color: #fff7e6;
+        }
+
+        .about-section {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            text-align: center;
+            transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+            animation: fadeIn 1.5s ease forwards;
+        }
+
+        .about-section:hover {
+            transform: scale(1.05);
+            background-color: #fffbf0;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .about-section h3 {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .about-section p {
+            font-size: 14px;
+            color: #666;
+        }
+
+        /* Fade-in animation for sections */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Footer styling */
+        .footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #1c1c1c;
+            color: #fff;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <div class="navbar-brand">The Farming</div>
+    <ul class="navbar-links">
+        <li><a href="/home">Home</a></li>
+        <li><a href="/services">Services</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/aboutUs">About</a></li>
+        <li><a href="/contactUs">Contact</a></li>
+    </ul>
+    <div class="navbar-button">
+        <button>Get Started</button>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div>
+        <h1>About Us</h1>
+        <p>Learn more about our commitment to sustainable farming, community growth, and agricultural innovation. Our mission is to empower farmers and inspire positive changes.</p>
+    </div>
+</section>
+
+<!-- About Content -->
+<section class="about-content">
+    <div class="about-section">
+        <h3>Our Mission</h3>
+        <p>To provide sustainable and innovative farming solutions that benefit communities and preserve the environment.</p>
+    </div>
+
+    <div class="about-section">
+        <h3>Our Vision</h3>
+        <p>Empowering farmers through knowledge, technology, and resources to build a better future.</p>
+    </div>
+
+    <div class="about-section">
+        <h3>Our Team</h3>
+        <p>A dedicated group of professionals with a passion for agriculture and sustainable practices.</p>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <p>© 2024 The Farming. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
