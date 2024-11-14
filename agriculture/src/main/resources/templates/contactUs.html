@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+          font-family: 'Poppins', sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: #f0f8ff;
+          color: #333;
+          height: 100vh;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+        }
+
+        /* Navbar styling */
+        .navbar {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 15px 30px;
+          background-color: #1c1c1c;
+          width: 100%;
+        }
+
+        .navbar-brand {
+          color: white;
+          font-size: 24px;
+          font-weight: bold;
+        }
+
+        .navbar-links {
+          display: flex;
+          list-style: none;
+        }
+
+        .navbar-links li {
+          margin: 0 15px;
+        }
+
+        .navbar-links a {
+          color: #f4f4f4;
+          text-decoration: none;
+          font-size: 16px;
+          transition: color 0.3s ease;
+        }
+
+        .navbar-links a:hover {
+          color: #ffb300;
+        }
+
+        .navbar-button button {
+          background-color: #ffb300;
+          color: white;
+          border: none;
+          padding: 10px 20px;
+          font-size: 16px;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+        }
+
+        .navbar-button button:hover {
+          background-color: #ff9800;
+        }
+
+        /* Main content styling with background image and fade-to-black effect */
+        .hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)),
+                        url("handagriculture.webp") center/cover no-repeat;
+            color: white; /* Make text visible against dark background */
+            flex: 1;
+            position: relative;
+        }
+
+        /* Typing animation */
+        .hero h1 {
+          font-size: 32px;
+          margin-bottom: 10px;
+          border-right: 3px solid rgba(255,255,255,0.75);
+          white-space: nowrap;
+          overflow: hidden;
+          width: 0;
+          animation: typing 4s steps(40, end) forwards, blink 0.75s step-end infinite;
+        }
+
+        @keyframes typing {
+          from {
+            width: 0;
+          }
+          to {
+            width: 100%; /* Set full width after typing animation completes */
+          }
+        }
+
+        @keyframes blink {
+          from, to {
+            border-color: transparent;
+          }
+          50% {
+            border-color: white;
+          }
+        }
+
+        .hero h1 span {
+          color: #ff6c00;
+        }
+
+        .hero p {
+          font-size: 14px;
+          color: #fff;
+          margin-bottom: 30px;
+          opacity: 0;
+          animation: fadeInSlide 1.5s ease-in-out forwards;
+          animation-delay: 4s; /* Delayed to show after typing effect ends */
+        }
+
+        /* Contact options container */
+        .contact-options {
+          display: flex;
+          justify-content: space-between;
+          padding: 20px 10px;
+          background-color: #f6f6f6;
+        }
+
+        /* Contact cards styling */
+        .contact-card {
+          background-color: #fff7e6;
+          border-radius: 10px;
+          padding: 20px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          width: 30%;
+          text-align: center;
+        }
+
+        .contact-card img {
+          width: 40px;
+          margin-bottom: 20px;
+        }
+
+        .contact-card h3 {
+          font-size: 20px;
+          color: #333;
+          margin-bottom: 10px;
+        }
+
+        .contact-card p {
+          font-size: 14px;
+          color: #666;
+          margin-bottom: 20px;
+        }
+
+        .contact-card a {
+          display: inline-block;
+          padding: 10px 20px;
+          background-color: #ffb300;
+          color: white;
+          border-radius: 5px;
+          text-decoration: none;
+          transition: background-color 0.3s ease;
+          animation: pulse 1.5s infinite;
+        }
+
+        .contact-card a:hover {
+          background-color: #ff9800;
+        }
+
+        @keyframes pulse {
+          0% {
+            transform: scale(1);
+          }
+          50% {
+            transform: scale(1.05);
+          }
+          100% {
+            transform: scale(1);
+          }
+        }
+
+        /* Footer styling */
+        .footer {
+          text-align: center;
+          padding: 10px;
+          background-color: #fff;
+          color: #333;
+          font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Custom Navbar -->
+<nav class="navbar">
+    <div class="navbar-brand">The Farming</div>
+    <ul class="navbar-links">
+        <li><a href="/home">Home</a></li>
+        <li><a href="/services">Services</a></li>
+        <li><a href="/bolg">Blog</a></li>
+        <li><a href="/aboutUs">About</a></li>
+        <li><a href="/contactUs">Contact</a></li>
+    </ul>
+    <div class="navbar-button">
+        <button>Get Started</button>
+    </div>
+</nav>
+
+<!-- Hero Section with Typing Animation and Background Image -->
+<section class="hero">
+    <div>
+        <h1>We are here for you, contact us at <span>anytime</span></h1>
+        <p>Have any questions about our services or just want to talk with us? Please reach out.</p>
+    </div>
+</section>
+
+<!-- Contact Options -->
+<section class="contact-options">
+    <div class="contact-card">
+        <img src="https://img.icons8.com/ios-filled/50/000000/chat.png" alt="Chat Icon">
+        <h3>Chat Now</h3>
+        <p>Right from this website</p>
+        <a href="home.html">Start Chat</a>
+    </div>
+
+    <div class="contact-card">
+        <img src="https://img.icons8.com/ios-filled/50/000000/email.png" alt="Email Icon">
+        <h3>Email Us</h3>
+        <p>From your email app</p>
+        <p>gaikwadsandhya@gmail.com</p>
+    </div>
+
+    <div class="contact-card">
+        <img src="https://img.icons8.com/ios-filled/50/000000/phone.png" alt="Phone Icon">
+        <h3>Call or text us</h3>
+        <p>From your phone</p>
+        <p>+917020406022</p>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <p>We'll get back to you as soon as possible. Our team is available 8am-6pm on weekdays.</p>
+</footer>
+

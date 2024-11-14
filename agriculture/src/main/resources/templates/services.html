@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the range of services provided by Healthy Soil Agriculture, including soil testing, expert guidance, and sustainable farming practices.">
+    <meta name="keywords" content="soil testing, sustainable farming, agriculture services, expert farming guidance">
+    <title>Our Services - Healthy Soil Agriculture</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), url("farming.jpg") no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: #1c1c1c;
+        }
+        .navbar-brand {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .navbar-links {
+            display: flex;
+            list-style: none;
+        }
+        .navbar-links li {
+            margin: 0 15px;
+        }
+        .navbar-links a {
+            color: #f4f4f4;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .navbar-links a:hover {
+            color: #ffb300;
+            transform: scale(1.1);
+        }
+        .navbar-button button {
+            background-color: #ffb300;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        /* Services Section */
+        .services-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 40px 20px;
+            justify-content: center;
+        }
+        .service-container {
+            width: 300px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 25px;
+            transition: transform 0.3s ease;
+            text-align: center;
+            cursor: pointer;
+        }
+        .service-container:hover {
+            transform: scale(1.05);
+            background-color: #e9ecef;
+        }
+        .service-container:hover .service-icon {
+            transform: scale(1.1);
+        }
+        .service-icon {
+            font-size: 40px;
+            color: #ffb300;
+            margin-bottom: 15px;
+        }
+        .service-item h3 {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .service-item p {
+            font-size: 15px;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        /* Call to Action Section */
+        .cta-section {
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 20px;
+            background-color: #1c1c1c;
+            color: white;
+        }
+        .cta-section h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .cta-section button {
+            background-color: #ffb300;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+        .cta-section button:hover {
+            background-color: #ff8c00;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .services-section {
+                flex-direction: column;
+                align-items: center;
+            }
+            .service-container {
+                width: 80%;
+                margin-bottom: 20px;
+            }
+        }
+
+        /* Smooth Scrolling for Navigation */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <div class="navbar-brand">The Farmer</div>
+    <ul class="navbar-links">
+        <li><a href="/home">Home</a></li>
+        <li><a href="/services">Services</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/aboutUs">About</a></li>
+        <li><a href="/contactUs">Contact</a></li>
+    </ul>
+    <div class="navbar-button">
+        <button>Get Started</button>
+    </div>
+</nav>
+
+<!-- Services Section -->
+<section class="services-section">
+    <div class="service-container">
+        <div class="service-icon">🧪</div>
+        <h2>Comprehensive Soil and Water Testing</h2>
+        <div class="service-item">
+            <h3>Unlock the Secrets of Your Land</h3>
+            <p>Our expert team provides thorough soil and water testing services. By analyzing key elements such as pH, nutrient levels, and contaminants, we deliver precise reports that empower you to make informed decisions for healthy farming.</p>
+        </div>
+    </div>
+    <div class="service-container">
+        <div class="service-icon">🌱</div>
+        <h2>Expert Guidance for Optimal Results</h2>
+        <div class="service-item">
+            <h3>Your Partner in Sustainable Agriculture</h3>
+            <p>Our dedicated team offers actionable insights and recommendations based on your specific conditions, helping you implement strategies that enhance crop yields and minimize environmental impact.</p>
+        </div>
+    </div>
+    <div class="service-container">
+        <div class="service-icon">💰</div>
+        <h2>Save Time and Money</h2>
+        <div class="service-item">
+            <h3>Efficiency Meets Affordability</h3>
+            <p>Our streamlined testing process is designed to save you both time and money, with quick turnaround times and affordable pricing options, ensuring sustainable farming without high costs.</p>
+        </div>
+    </div>
+    <div class="service-container">
+        <div class="service-icon">🌍</div>
+        <h2>Commitment to Healthy Agriculture</h2>
+        <div class="service-item">
+            <h3>Cultivating a Greener Future</h3>
+            <p>Choosing our services means supporting sustainable farming and promoting biodiversity. Together, we can cultivate a greener future while ensuring the success of your agricultural efforts.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action Section -->
+<section class="cta-section">
+    <h2>Ready to Take Your Agriculture to the Next Level?</h2>
+    <p>Join our community of sustainable farmers today!</p>
+    <button>Contact Us</button>
+</section>
+
+</body>
+</html>
