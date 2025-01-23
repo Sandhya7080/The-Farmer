@@ -1,7 +1,7 @@
-# **Agriculture-Project 🌱**
+# **The Farmer 🌱**
 
 ## **Description**
-**Agriculture-Project** is a web application dedicated to providing essential services for farmers, focusing on **soil testing**, **expert guidance**, and **sustainable farming practices**. This platform, *Healthy Soil Agriculture*, empowers farmers to make informed decisions by offering comprehensive soil and water testing, sustainable strategies, and affordability, fostering a healthier, eco-friendly approach to agriculture.
+**The Farmer** is a web application dedicated to providing essential services for farmers, focusing on **soil testing**, **expert guidance**, and **sustainable farming practices**. This platform, *Healthy Soil Agriculture*, empowers farmers to make informed decisions by offering comprehensive soil and water testing, sustainable strategies, and affordability, fostering a healthier, eco-friendly approach to agriculture.
 
 ## **Project Objective**
 To support farmers in maintaining **soil health**, improving **crop yields**, and minimizing **environmental impact** through expert recommendations tailored to individual soil conditions.
